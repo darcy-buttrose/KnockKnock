@@ -14,10 +14,10 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Compiling the Node.js code
-      - serverless package
+      - serverless webpack
   post_build:
     commands:
       - echo Build completed on `date`
 artifacts:
   files:
-    - .serverless/KnockKnock.zip
+    - .webpack/service/*
